@@ -37,11 +37,11 @@ diamonds_clen <- diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
+
 ##hey conner!
 
 subset_carat <- diamonds %>% 
   filter(carat > 4)
-
 
 ```
 
