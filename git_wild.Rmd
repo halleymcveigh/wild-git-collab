@@ -33,8 +33,7 @@ diamonds_clen <- diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-# Broken graph entry 
-
+# Broken graph entry, second try
 
 diamonds_graph <- ggplot(data = diamonds, aes(x = carat, y = price)) +
   geom_point()
