@@ -17,6 +17,10 @@ library(tidyverse)
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
 
+ 
+ggplot(data = diamonds) +
+  geom_point(aes(x = "price", y = "carat"))
+
 
 ```
 
@@ -33,20 +37,19 @@ diamonds_clen <- diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-# Broken graph entry, second try
 
-diamonds_graph <- ggplot(data = diamonds, aes(x = carat, y = price)) +
-  geom_point()
+##hey conner!
 
+subset_carat <- diamonds %>% 
+  filter(carat > 4)
 
 ```
 
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
+ggplot(data = diamonds) +
+  geom_point(aes(x = "cut", y = "price"))
 
 
 ```
