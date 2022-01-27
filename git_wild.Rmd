@@ -43,9 +43,9 @@ diamonds_clen <- diamonds %>%
 ## STEP 11: And even more merge conflicts!
 
 ```{r break-it-2}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
+### Broken graph entry
 
+diamonds_graph <- ggplot(data = diamonds, aes(x = carat, y = price)) +
+  geom_point()
 
 ```
